@@ -19,3 +19,14 @@
   -moz-font-feature-settings: "zero" on;
   font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
 }
+.border-date {
+  position: relative;
+  border: 1px solid var(--color-dark);
+  padding: 32px 24px 24px 24px;
+  .date {
+    position: absolute;
+    padding: 10px;
+    top: -18px;
+    left: -1px;
+  }
+}
