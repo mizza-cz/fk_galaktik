@@ -1,0 +1,76 @@
+.c-album-section {
+  margin-bottom: 64px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 40px;
+  }
+  &__number {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62));
+    span {
+      display: block;
+    }
+  }
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-gap: 20px;
+    grid-template-rows: 158px 158px;
+    @include media-breakpoint-down(lg) {
+      grid-template-columns: auto auto auto auto auto auto;
+      grid-template-rows: auto;
+      grid-gap: 16px;
+    }
+  }
+  .grid-item {
+    grid-column: span 2;
+    grid-row: span 1;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include media-breakpoint-down(lg) {
+      grid-column: span 3;
+      grid-row: span 2;
+    }
+    &-1 {
+      grid-column: span 3;
+      grid-row: span 2;
+      @include media-breakpoint-down(lg) {
+        grid-column: span 3;
+        grid-row: span 2;
+      }
+    }
+    &-2 {
+      grid-column: span 3;
+      grid-row: span 1;
+      @include media-breakpoint-down(lg) {
+        grid-column: span 3;
+        grid-row: span 2;
+      }
+    }
+    &-3 {
+      grid-column: span 2;
+      grid-row: span 2;
+      @include media-breakpoint-down(lg) {
+        grid-column: span 3;
+        grid-row: span 2;
+      }
+    }
+  }
+}
