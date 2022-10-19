@@ -1,0 +1,27 @@
+/*! purgecss start ignore */
+.text-primary {
+  color: var(--color-primary);
+}
+.bg-primary {
+  background: var(--color-primary);
+}
+.pt-section {
+  padding-top: 56px;
+}
+.bg-dark {
+  background-color: #1e1e1e;
+}
+.bg-white {
+  background-color: var(--color-white);
+}
+.bt-section {
+  border-top: 8px solid var(--color-primary);
+}
+.bb-section {
+  border-bottom: 8px solid var(--color-primary);
+}
+.text-white {
+  color: var(--color-white);
+}
+
+/*! purgecss end ignore */

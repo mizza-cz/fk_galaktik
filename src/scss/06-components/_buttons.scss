@@ -1,0 +1,31 @@
+.btn {
+  border: 1px solid var(--color-dark);
+  outline: none;
+  padding: 13px 22px;
+  border-radius: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: var(--color-light);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: all 0.3s;
+  &:hover {
+    text-decoration-color: inherit;
+  }
+}
+.btn--arrow {
+  padding-right: 88px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    right: 24px;
+    top: 10px;
+    background-image: url("../images/ico/arrow-right.svg");
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

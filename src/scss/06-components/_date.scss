@@ -1,0 +1,21 @@
+.date {
+  background-color: var(--color-dark);
+  width: fit-content;
+  color: var(--color-light);
+  padding: 4px 8px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  font-feature-settings: "zero" on;
+  -moz-font-feature-settings: "zero" on;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+}
+
+.zero {
+  font-size: 14px;
+  letter-spacing: -1px;
+  display: inline-block;
+  font-feature-settings: "zero" on;
+  -moz-font-feature-settings: "zero" on;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+}

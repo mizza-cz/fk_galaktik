@@ -1,0 +1,220 @@
+.o-content {
+  .perex {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &::after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+  > :first-child {
+    margin-top: 0;
+  }
+  > :last-child {
+    margin-bottom: 0;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 16px;
+  }
+  p {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  ul {
+    max-width: 600px;
+    font-size: 16px;
+    line-height: 23px;
+    margin: 24px 0 56px;
+    margin-left: auto;
+    margin-right: auto;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 32px;
+    }
+    > li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 16px;
+      &::before {
+        content: "";
+        background-color: var(--color-primary);
+        position: absolute;
+        top: 8px;
+        left: 0;
+        width: 8px;
+        height: 8px;
+      }
+      > ul {
+        margin: 16px 0 0;
+        > li {
+          &::before {
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+  img {
+    margin: 32px auto;
+    width: 100%;
+    height: auto;
+  }
+  .ratio {
+    margin-bottom: 32px;
+    margin-top: 32px;
+  }
+  p iframe {
+    margin: 0;
+  }
+  iframe {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+  }
+  ol {
+    max-width: 600px;
+    font-size: 16px;
+    line-height: 23px;
+    margin: 24px 0;
+    counter-reset: item;
+    margin-left: auto;
+    margin-right: auto;
+
+    > li {
+      counter-increment: item;
+      position: relative;
+      padding-left: 32px;
+      margin-bottom: 16px;
+      &::before {
+        content: counter(item) ".";
+        color: var(--color-primary);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        position: absolute;
+        top: 4px;
+        left: 0;
+      }
+      > ol {
+        margin: 16px 0 0;
+        > li {
+          &::before {
+            content: counter(item) ".";
+          }
+        }
+      }
+    }
+  }
+}
+
+.o-content h1,
+.h1 {
+  font-size: 64px;
+  line-height: 72px;
+  font-weight: 700;
+  @include media-breakpoint-down(lg) {
+    font-size: 48px;
+    line-height: 125%;
+  }
+}
+.o-content h2,
+.h2 {
+  font-size: 54px;
+  line-height: 69px;
+  font-weight: 700;
+  @include media-breakpoint-down(lg) {
+    font-size: 42px;
+    line-height: 125%;
+  }
+}
+.o-content h3,
+.h3 {
+  font-size: 48px;
+  line-height: 61px;
+  font-weight: 700;
+  @include media-breakpoint-down(lg) {
+    font-size: 36px;
+    line-height: 125%;
+  }
+}
+.o-content h4,
+.h4 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 46px;
+  @include media-breakpoint-down(lg) {
+    font-size: 28px;
+    line-height: 125%;
+  }
+}
+
+.o-content h5,
+.h5 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+  @include media-breakpoint-down(lg) {
+    font-size: 18px;
+    line-height: 125%;
+  }
+}
+.o-content h6,
+.h6 {
+  font-size: 16px;
+  line-height: 125%;
+  font-weight: 700;
+}
+.num {
+  font-size: 54px;
+  line-height: 69px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  font-feature-settings: "zero" on;
+  -moz-font-feature-settings: "zero" on;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  @include media-breakpoint-down(lg) {
+    font-size: 36px;
+    line-height: 125%;
+  }
+}
+
+.perex {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 40px;
+  max-width: 808px;
+  span {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 16px;
+  }
+}
+
+.p1 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+}
+.p2 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+.p3 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}

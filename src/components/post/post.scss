@@ -1,0 +1,63 @@
+.post {
+  display: block;
+  border: 1px solid var(--color-dark);
+  height: 100%;
+  .h5 {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: all 0.3s;
+  }
+  &:hover {
+    .h5 {
+      text-decoration-color: inherit;
+    }
+    .post__img img {
+      transform: scale(1.1);
+    }
+  }
+  &__info {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    padding: 16px;
+    p {
+      margin-top: 8px;
+      -ms-text-overflow: ellipsis;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      -ms-line-clamp: 2;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+      display: -webkit-box;
+      display: -moz-box;
+      word-wrap: break-word;
+      -webkit-box-orient: vertical;
+      box-orient: vertical;
+    }
+  }
+  .date {
+    margin-bottom: 20px;
+  }
+  &__img {
+    height: 184px;
+    position: relative;
+    overflow: hidden;
+    @include media-breakpoint-down(xl) {
+      height: auto;
+      aspect-ratio: 286/184;
+    }
+    img {
+      transition: all 0.3s;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__link {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration-color: transparent;
+  }
+}
