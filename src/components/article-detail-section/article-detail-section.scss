@@ -21,24 +21,10 @@
       max-width: 600px;
       margin: 16px auto;
     }
-    q {
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 26px;
-      max-width: 808px;
-      margin: 40px auto !important;
-      display: block;
-      &::before,
-      &::after {
-        display: none;
-      }
-      span {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 18px;
-        margin-top: 16px;
-        display: block;
-      }
+    ul,
+    ol {
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
