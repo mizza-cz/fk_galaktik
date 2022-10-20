@@ -120,10 +120,7 @@
   height: 120px;
   object-fit: contain;
   z-index: 999;
-  &:hover img,
-  &:hover svg {
-    transform: scale(1.1);
-  }
+
   @media only screen and (min-width: 540px) and (max-width: 1200px) {
     width: 130px;
     height: 90px;
@@ -142,7 +139,6 @@
     height: 100%;
     display: block;
     object-fit: contain;
-    transition: all 0.3s;
   }
 }
 .is-nav-open .header .navbar-expand-lg .navbar-collapse {
