@@ -4,12 +4,14 @@
 }
 .bg-primary {
   background: var(--color-primary);
+  color: var(--color-white);
 }
 .pt-section {
   padding-top: 56px;
 }
 .bg-dark {
   background-color: #1e1e1e;
+  color: var(--color-white);
 }
 .bg-white {
   background-color: var(--color-white);
@@ -22,6 +24,15 @@
 }
 .text-white {
   color: var(--color-white);
+}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 /*! purgecss end ignore */
