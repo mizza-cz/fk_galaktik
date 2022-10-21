@@ -22,6 +22,8 @@ select,
   -moz-font-feature-settings: "zero" on;
   font-family: "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo",
     monospace;
+}
+.select2-results__options > li {
   width: 100%;
 }
 .border-date {
