@@ -12,14 +12,6 @@
     text-decoration: none;
     margin-bottom: 32px;
     align-items: center;
-    &:hover {
-      .c-team__info span {
-        text-decoration-color: inherit;
-      }
-      .c-team__img span {
-        opacity: 1;
-      }
-    }
   }
   &__img {
     width: 72px;
@@ -27,21 +19,7 @@
     border-radius: 50%;
     overflow: hidden;
     position: relative;
-    span {
-      transition: all 0.3s;
-      opacity: 0;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      font-size: 32px;
-      color: var(--color-light);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: var(--color-primary);
-    }
+
     img {
       width: 100%;
       height: 100%;
