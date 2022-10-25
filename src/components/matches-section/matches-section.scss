@@ -18,6 +18,15 @@
   }
 }
 .c-matches-section {
+  &__scores {
+    @include media-breakpoint-down(md) {
+      display: flex;
+      justify-content: center;
+      div {
+        padding: 0 4px;
+      }
+    }
+  }
   .report {
     font-size: 18px;
     letter-spacing: 0.23px;
@@ -43,6 +52,16 @@
   }
   &__date {
     font-weight: 700;
+  }
+  &__teams {
+    @include media-breakpoint-down(md) {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      div {
+        padding: 0 8px;
+      }
+    }
   }
   &__logos {
     img {

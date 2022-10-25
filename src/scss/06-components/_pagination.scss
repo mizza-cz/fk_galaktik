@@ -20,7 +20,12 @@
     color: var(--color-light);
   }
   .page-link {
-    color: var(--color-primary);
+    color: var(--color-dark);
     border-radius: 0 !important;
+    display: flex;
+    align-items: center;
+    background: var(--color-light);
+    justify-content: center;
+    border-color: var(--color-dark);
   }
 }

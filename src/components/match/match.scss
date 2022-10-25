@@ -5,6 +5,9 @@
   position: relative;
   display: flex;
   text-decoration: none;
+  .category {
+    color: var(--color-dark);
+  }
   @include media-breakpoint-down(md) {
     flex-direction: column;
   }

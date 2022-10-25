@@ -11,7 +11,13 @@
   text-decoration-color: transparent;
   transition: all 0.3s;
   &:hover {
-    text-decoration-color: inherit;
+    // text-decoration-color: inherit;
+    border: 1px solid var(--color-white);
+    background-color: var(--color-dark);
+    color: var(--color-white);
+  }
+  &:focus {
+    box-shadow: 0px 0px 0px 2px #e94747;
   }
 }
 .btn--arrow {
@@ -27,5 +33,9 @@
     height: 24px;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: all 0.3s;
+  }
+  &:hover::before {
+    background-image: url("../images/ico/arrow-right-2.svg");
   }
 }

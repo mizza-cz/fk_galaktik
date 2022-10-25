@@ -2,9 +2,6 @@
   display: flex;
   &__item {
     padding: 0 8px !important;
-    // &:last-child {
-    //   padding-right: 3px !important;
-    // }
   }
   &__link {
     width: 20px;
@@ -12,9 +9,7 @@
     border-radius: 50%;
     display: block;
     transition: all 0.3s;
-    &:hover {
-      transform: scale(1.2);
-    }
+
     img,
     svg {
       width: 100%;
