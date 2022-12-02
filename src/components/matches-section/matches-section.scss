@@ -25,6 +25,19 @@
       div {
         padding: 0 4px;
       }
+      div:first-child {
+        position: relative;
+        padding-right: 8px;
+        &::before {
+          content: ":";
+          position: absolute;
+          right: 0;
+          top: -2px;
+          color: var(--color-primary);
+          font-size: 16px;
+          font-weight: 700;
+        }
+      }
     }
   }
   .report {
@@ -61,11 +74,24 @@
       div {
         padding: 0 8px;
       }
+      div:first-child {
+        position: relative;
+        padding-right: 16px;
+        &::before {
+          content: "-";
+          position: absolute;
+          right: 0;
+          top: 0;
+          color: var(--color-primary);
+          font-size: 20px;
+          font-weight: 500;
+        }
+      }
     }
   }
   &__logos {
     img {
-      height: 56px;
+      width: 56px;
     }
     p {
       color: #f0f0f0;
@@ -73,6 +99,8 @@
       font-style: italic;
       font-weight: bold;
       letter-spacing: -0.65px;
+      padding-left: 4px;
+      padding-right: 8px;
     }
   }
 }

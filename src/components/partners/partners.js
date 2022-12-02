@@ -5,9 +5,9 @@ $(".js-slider").slick({
   autoplay: true,
   infinite: true,
   prevArrow:
-    '<button class="slider__btn slider__btnprev"><img src="images/ico/left.svg" alt="" ></button> ',
+    '<button class="slider__btn slider__btnprev"><img src="/assets/images/left.svg" alt="" ></button> ',
   nextArrow:
-    ' <button class="slider__btn  slider__btnnext"><img src="images/ico/right.svg" alt = "" ></button>',
+    ' <button class="slider__btn  slider__btnnext"><img src="/assets/images/right.svg" alt = "" ></button>',
   responsive: [
     {
       breakpoint: 1400,
