@@ -146,6 +146,9 @@
     object-fit: contain;
   }
 }
+body.is-nav-open {
+  overflow: hidden;
+}
 .is-nav-open .header .navbar-expand-lg .navbar-collapse {
   @include media-breakpoint-down(xl) {
     opacity: 1;
@@ -231,6 +234,8 @@
       text-align: center;
       width: 100%;
       margin-bottom: 24px;
+      height: 100vh;
+      overflow-y: scroll;
     }
   }
   &-collapse {
@@ -277,10 +282,12 @@
     width: 100%;
     text-align: center;
     justify-content: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     padding-left: 8px;
     padding-right: 8px;
+    display: block;
+    height: auto;
   }
 
   &:focus,
@@ -306,6 +313,7 @@
   @include media-breakpoint-down(xl) {
     display: block;
     width: 100%;
+    height: auto;
   }
   &:first-child .nav-link {
     padding-left: 4px;
