@@ -10,8 +10,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 	<link rel="preload" href="css/styles.css" as="style" />
-	<link rel="stylesheet" media="screen, handheld" href="css/styles.css?v=20230517287" />
-	<link rel="stylesheet" media="print" href="css/prints.css?v=20230517287" />
+	<link rel="stylesheet" media="screen, handheld" href="css/styles.css?v=202305192572" />
+	<link rel="stylesheet" media="print" href="css/prints.css?v=202305192572" />
 	<link rel="preload" href="https://code.jquery.com/jquery-3.6.0.min.js" as="script" crossorigin />
 	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" as="script" crossorigin />
 	<link rel="preload" href="js/scripts.js" as="script" />
@@ -133,121 +133,137 @@
 									<a class="nav-link dropdown-toggle" href="#" id="klub" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 										Klub
 									</a>
-									<ul class="dropdown-menu" aria-labelledby="klub">
-										<li><a class="dropdown-item" href="#">O nás</a></li>
-										<li>
-											<a class="dropdown-item" href="#">Kontakty</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="#">Nejčastějšie dotazy</a>
-										</li>
-										<li><a class="dropdown-item" href="#">Historie</a></li>
-										<li>
-											<a class="dropdown-item" href="#">Tréningové centrá</a>
-										</li>
-										<li><a class="dropdown-item" href="#">Na stiahnutie</a></li>
-										<li><a class="dropdown-item" href="#">Osobnosti klubu</a></li>
+									<div class="dropdown-menu" aria-labelledby="klub">
+										<ul class="dropdown-menu__col">
+											<li><a class="dropdown-item" href="#">O nás</a></li>
+											<li><a class="dropdown-item" href="#">Historie</a></li>
+											<li><a class="dropdown-item" href="#">Osobnosti klubu</a></li>
+										</ul>
+										<ul class="dropdown-menu__col">
+											<li>
+												<a class="dropdown-item" href="#">Kontakty</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Tréningové centrá</a>
+											</li>
+											<li><a class="dropdown-item" href="#">Práca & Kariéra</a></li>
+										</ul>
+										<ul class="dropdown-menu__col">
+											<li>
+												<a class="dropdown-item" href="#">Nejčastějšie dotazy</a>
+											</li>
 
-										<li><a class="dropdown-item" href="#">Práca & Kariéra</a></li>
-									</ul>
+											<li><a class="dropdown-item" href="#">Na stiahnutie</a></li>
+										</ul>
+									</div>
 								</li>
 								<li class="nav-item dropdown">
 									<a class="nav-link dropdown-toggle" href="#" id="stadion" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 										A-tím
 									</a>
-									<ul class="dropdown-menu" aria-labelledby="stadion">
-										<li><a class="dropdown-item" href="#">ŠKOENERGO Aréna</a></li>
-										<li>
-											<a class="dropdown-item" href="#">Navštěvní řád ZS</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="#">Vstupenky a permanentky</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="#">Veřejné bruslení</a>
-										</li>
-										<li><a class="dropdown-item" href="#">Rozpis ledu</a></li>
-										<li><a class="dropdown-item" href="#">Jak na stadion</a></li>
-										<li><a class="dropdown-item" href="#">Restaurace</a></li>
-									</ul>
+									<div class="dropdown-menu" aria-labelledby="stadion">
+										<ul class="dropdown-menu__col">
+											<li><a class="dropdown-item" href="#">ŠKOENERGO Aréna</a></li>
+											<li>
+												<a class="dropdown-item" href="#">Veřejné bruslení</a>
+											</li>
+											<li><a class="dropdown-item" href="#">Restaurace</a></li>
+										</ul>
+										<ul class="dropdown-menu__col">
+											<li>
+												<a class="dropdown-item" href="#">Navštěvní řád ZS</a>
+											</li>
+											<li><a class="dropdown-item" href="#">Rozpis ledu</a></li>
+										</ul>
+										<ul class="dropdown-menu__col">
+											<li>
+												<a class="dropdown-item" href="#">Vstupenky a permanentky</a>
+											</li>
+											<li><a class="dropdown-item" href="#">Jak na stadion</a></li>
+										</ul>
+									</div>
 								</li>
 								<li class="nav-item dropdown">
 									<a class="nav-link dropdown-toggle" href="#" id="tym" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 										Mládež
 									</a>
-									<ul class="dropdown-menu" aria-labelledby="tym">
-										<li>
-											<a class="dropdown-item" href="zobraz.asp?t=this-is-my-sen-academy">THIS IS MY SEN ACADEMY</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="mladez.asp?kategorie=U19">Starší dorast (U19)</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="mladez.asp?kategorie=U11">Prípravka (U11)</a>
-										</li>
-
-										<li>
-											<a class="dropdown-item" href="this_is_my_sen.asp">This is my sen u11</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="mladez.asp?kategorie=U17">Mladší dorast (U17)</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="mladez.asp?kategorie=U10">Prípravka (U10)</a>
-										</li>
-
-										<li>
-											<a class="dropdown-item" href="zobraz.asp?t=adoptuj-tim">Adoptuj si svoj tím</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="mladez.asp?kategorie=U16">Mladší dorast (U16)</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="mladez.asp?kategorie=U9">Prípravka (U9)</a>
-										</li>
-
-										<li>
-											<a class="dropdown-item" href="zobraz.asp?t=nabor-deti">Nábor detí</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="mladez.asp?kategorie=U15">Starší žiaci (U15)</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="mladez.asp?kategorie=U8">Prípravka (U8)</a>
-										</li>
-
-										<li>
-											<a class="dropdown-item" href="partneri.asp" id="menu_partneri">Partneri mládeže</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="mladez.asp?kategorie=U14">Starší žiaci (U14)</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="mladez.asp?kategorie=U7">Predprípravka (U7)</a>
-										</li>
-
-										<li>
-											<a class="dropdown-item" href="zobraz.asp?t=partnerske-skoly">Partnerské školy</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="mladez.asp?kategorie=U13">Mladší žiaci (U13)</a>
-										</li>
-										<li>
-											<a class="dropdown-item" href="mladez.asp?kategorie=U12">Mladší žiaci (U12)</a>
-										</li>
-									</ul>
+									<div class="dropdown-menu" aria-labelledby="tym">
+										<ul class="dropdown-menu__col">
+											<li>
+												<a class="dropdown-item" href="zobraz.asp?t=this-is-my-sen-academy">THIS IS MY SEN ACADEMY</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="this_is_my_sen.asp">This is my sen u11</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="zobraz.asp?t=adoptuj-tim">Adoptuj si svoj tím</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="partneri.asp" id="menu_partneri">Partneri mládeže</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="zobraz.asp?t=partnerske-skoly">Partnerské školy</a>
+											</li>
+										</ul>
+										<ul class="dropdown-menu__col">
+											<li>
+												<a class="dropdown-item" href="mladez.asp?kategorie=U19">Starší dorast (U19)</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="mladez.asp?kategorie=U17">Mladší dorast (U17)</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="mladez.asp?kategorie=U16">Mladší dorast (U16)</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="mladez.asp?kategorie=U14">Starší žiaci (U14)</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="mladez.asp?kategorie=U13">Mladší žiaci (U13)</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="mladez.asp?kategorie=U12">Mladší žiaci (U12)</a>
+											</li>
+										</ul>
+										<ul class="dropdown-menu__col">
+											<li>
+												<a class="dropdown-item" href="mladez.asp?kategorie=U11">Prípravka (U11)</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="mladez.asp?kategorie=U10">Prípravka (U10)</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="mladez.asp?kategorie=U9">Prípravka (U9)</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="mladez.asp?kategorie=U8">Prípravka (U8)</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="mladez.asp?kategorie=U7">Predprípravka (U7)</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="zobraz.asp?t=nabor-deti">Nábor detí</a>
+											</li>
+										</ul>
+									</div>
 								</li>
 								<li class="nav-item dropdown">
 									<a class="nav-link dropdown-toggle" href="#" id="zapasy" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 										Marketing
 									</a>
-									<ul class="dropdown-menu" aria-labelledby="zapasy">
-										<li><a class="dropdown-item" href="#">Liga</a></li>
-										<li><a class="dropdown-item" href="#">Příprava</a></li>
-										<li><a class="dropdown-item" href="#">Tabulka</a></li>
-										<li><a class="dropdown-item" href="#">Kalendář</a></li>
-										<li><a class="dropdown-item" href="#">Zápasy B týmu</a></li>
-									</ul>
+									<div class="dropdown-menu" aria-labelledby="zapasy">
+										<ul class="dropdown-menu__col">
+											<li><a class="dropdown-item" href="#">Liga</a></li>
+											<li><a class="dropdown-item" href="#">Kalendář</a></li>
+										</ul>
+										<ul class="dropdown-menu__col">
+											<li><a class="dropdown-item" href="#">Příprava</a></li>
+											<li><a class="dropdown-item" href="#">Zápasy B týmu</a></li>
+										</ul>
+										<ul class="dropdown-menu__col">
+											<li><a class="dropdown-item" href="#">Tabulka</a></li>
+										</ul>
+									</div>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="#"> Fanzóna </a>
@@ -650,7 +666,7 @@
 	</div>
 	<script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-	<script defer src="js/scripts.js?v=202305173091"></script>
+	<script defer src="js/scripts.js?v=202305191595"></script>
 </body>
 
 </html>

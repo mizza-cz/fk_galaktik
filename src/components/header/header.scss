@@ -355,6 +355,7 @@
       padding-right: 0;
       padding-top: 24px;
       border: none;
+      padding-bottom: 16px;
       &.show {
         display: block;
       }
@@ -365,15 +366,17 @@
         display: block;
       }
     }
-    li {
-      margin-bottom: 7px;
+    &__col {
       flex: 0 0 33.333%;
       max-width: 33.333%;
       padding: 0 7px;
+      margin-bottom: 0;
+      li {
+        margin-bottom: 8px;
+      }
       @include media-breakpoint-down(xl) {
         flex: 100%;
         max-width: 100%;
-        margin-bottom: 12px;
       }
       &:last-child {
         margin-bottom: 0;
