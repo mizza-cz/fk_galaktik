@@ -23,3 +23,9 @@
     aspect-ratio: 392/160;
   }
 }
+.pub-slider {
+  .slick-track {
+    display: flex;
+    gap: 24px;
+  }
+}
