@@ -24,13 +24,6 @@ $(".pub-slider").slick({
     {
       breakpoint: 900,
       settings: {
-        slidesToShow: 2,
-        arrows: false,
-      },
-    },
-    {
-      breakpoint: 420,
-      settings: {
         slidesToShow: 1,
         arrows: false,
       },
